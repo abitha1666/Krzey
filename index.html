@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Skincare</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+        <img src="logo.jpeg" alt="Logo" id="logo"> <!-- Logo added here -->
+
+      <h1>Natural Beauty, Naturally</h1>
+      <p>Discover pure, organic skincare products tailored to your needs.</p>
+      <button onclick="scrollToSection('skin-type')">Shop Now</button>
+
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          Our mission is to provide you with the highest quality, organic
+          skincare products.
+        </p>
+      </section>
+
+      <section id="skin-type">
+        <h2>Determine Your Skin Type</h2>
+        <form id="skinTypeForm">
+          <label for="skinType">Select Your Skin Type:</label>
+          <select id="skinType" name="skinType" required>
+            <option value="">--Select--</option>
+            <option value="oily">Oily</option>
+            <option value="dry">Dry</option>
+            <option value="sensitive">Sensitive</option>
+            <option value="combination">Combination</option>
+            <option value="acne">Acne-Prone</option>
+            <option value="show-all">Show All</option>
+          </select>
+          <button type="submit">Submit</button>
+        </form>
+        <div id="recommendations"></div>
+      </section>
+
+      <section id="cart">
+        <button onclick="goToCart()">View Cart</button>
+      </section>
+
+
+      <!-- Contact Us Section -->
+    <section id="contactUsSection">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit">Send</button>
+        </form>
+        <p id="contactResponse" style="display: none; color: #88c9bf;">Thank you for your message! We'll get back to you soon.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Your Organic Beauty Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
